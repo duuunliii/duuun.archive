@@ -1,0 +1,65 @@
+@import './main.scss';
+
+.workdetail {
+  width: 90%;
+  margin: 20px 5%;
+  padding: 30px;
+  border-radius: 20px;
+  background: #ebebeb;
+  box-shadow: 7px 7px 5px #cccccc, -7px -7px 5px #ffffff;
+
+  .backBtn {
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 20px;
+    background-image: url('https://user-images.githubusercontent.com/77374852/178285639-fde5da7d-3fe1-4b65-83f8-b054c72327a1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-family: $bold;
+    font-size: 26px;
+    color: #3b3b3b;
+    text-align: center;
+  }
+
+  .genre {
+    font-family: $light;
+    font-size: 15px;
+    color: $primary;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .detail {
+    font-family: $medium;
+    font-size: 15px;
+    color: $primary;
+    margin: 15px 0;
+  }
+
+  .detailImg,
+  .detailVideo {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 3px auto;
+  }
+
+  @include responsive(T) {
+    .title {
+      font-size: 30px;
+    }
+
+    .detail {
+      font-size: 17px;
+    }
+
+    .detailImg {
+      width: 70%;
+      margin: 3px auto;
+    }
+  }
+}

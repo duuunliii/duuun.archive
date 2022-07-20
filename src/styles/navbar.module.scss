@@ -1,0 +1,7 @@
+@import './main.scss';
+
+.navbar {
+  @include flexbox;
+  font-family: $light;
+  color: $primary;
+}

@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: $medium;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  line-height: 1.3;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+// canvas {
+//   position: absolute;
+//   top: 0;
+//   pointer-events: none;
+//   z-index: $canvas-index;
+// }
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
