@@ -4,7 +4,7 @@ import WorkDetail from './routes/WorkDetail.js'
 
 function App() {
   return (
-    <BrowserRouter basename="/duuun">
+    <BrowserRouter>
       <Routes>
         <Route path="/duuun/work/:id" element={<WorkDetail />} />
       </Routes>
