@@ -4,10 +4,11 @@ import Profile from '../components/Profile.js'
 import WorksList from '../components/WorksList.js'
 
 function Home() {
+  window.scrollTo(0, 0)
   return (
     <div>
       <Header />
-      <Profile />
+      {/* <Profile /> */}
       <WorksList />
     </div>
   )

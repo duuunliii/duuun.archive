@@ -10,8 +10,12 @@ function Profile() {
           이다은 Daeun Lee <br></br>2018~ 서울예술대학교 영상학부 디지털아트
           전공 재학 <br></br> <br></br>소프트웨어 프로그래밍 Software
           Programming<br></br>
-          Unity C# / Web Frontend (HTML, CSS, SCSS, JavaScript)
+          Web Frontend (HTML, CSS, SCSS, JavaScript) / Unity C# / Processing
         </p>
+        <img
+          alt="Logo of Tools"
+          src="https://user-images.githubusercontent.com/77374852/180023281-34dfce0f-32e8-4e40-a416-df3221b16262.png"
+        ></img>
       </div>
 
       <div className={Styles.info}>

@@ -5,6 +5,8 @@ import Styles from '../styles/workdetail.module.scss'
 import work3Video from '../assets/wave.mp4'
 
 function WorkDetail() {
+  window.scrollTo(0, 0)
+
   const { id } = useParams()
   const [details, setDetails] = useState([])
   const [detailImgs, setDetailImgs] = useState([])
@@ -26,12 +28,16 @@ function WorkDetail() {
     <div className={Styles.workdetail}>
       <Link to={'/duuun/'} className={Styles.backBtn}></Link>
       <h1 className={Styles.title}>{WorksData[id].title}</h1>
-      <h4 className={Styles.genre}>{WorksData[id].genre}</h4>
+      <div className={Styles.yearAndGenre}>
+        (<h4 className={Styles.year}>{WorksData[id].year}</h4>,
+        <h4 className={Styles.genre}>{WorksData[id].genre}</h4>)
+      </div>
+      <h4 className={Styles.skill}>{WorksData[id].skill}</h4>
 
       {WorksData[id].link == undefined ? (
         console.log('no link')
       ) : (
-        <a className={Styles.link} href={WorksData[id].link}>
+        <a className={Styles.link} href={WorksData[id].link} target={'_blank'}>
           CLICK ME
         </a>
       )}
@@ -46,7 +52,7 @@ function WorkDetail() {
         <img className={Styles.detailImg} key={index} src={detailImg}></img>
       ))}
 
-      {WorksData[id].detailVideo == undefined ? (
+      {/* {WorksData[id].detailVideo == undefined ? (
         console.log('no video')
       ) : (
         <video
@@ -58,7 +64,7 @@ function WorkDetail() {
         >
           <source src={work3Video} type="video/mp4"></source>
         </video>
-      )}
+      )} */}
     </div>
   )
 }

@@ -6,10 +6,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/duuun/work/:id" element={<WorkDetail />} />
+        <Route path="/duuun.archive/work/:id" element={<WorkDetail />} />
       </Routes>
       <Routes>
-        <Route path="/duuun/" element={<Home />} />
+        <Route path="/duuun.archive/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )

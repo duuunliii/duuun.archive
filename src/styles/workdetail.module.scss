@@ -4,9 +4,9 @@
   width: 90%;
   margin: 20px 5%;
   padding: 30px;
-  border-radius: 20px;
+  // border-radius: 20px;
   background: #ebebeb;
-  box-shadow: 7px 7px 5px #cccccc, -7px -7px 5px #ffffff;
+  // box-shadow: 7px 7px 5px #cccccc, -7px -7px 5px #ffffff;
 
   .backBtn {
     display: block;
@@ -19,22 +19,37 @@
   }
 
   .title {
-    font-family: $bold;
+    // font-family: $dos;
     font-size: 26px;
     color: #3b3b3b;
     text-align: center;
   }
 
-  .genre {
-    font-family: $light;
-    font-size: 15px;
+  .yearAndGenre {
+    display: block;
     color: $primary;
+    font-size: 15px;
+    text-align: center;
+    // font-family: $dos;
+    margin-bottom: 10px;
+
+    .year,
+    .genre {
+      // font-family: $dos;
+      display: inline;
+    }
+  }
+
+  .skill {
+    color: #3b3b3b;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 30px;
+    // font-family: $light;
   }
 
   .detail {
-    font-family: $medium;
+    // font-family: $medium;
     font-size: 15px;
     color: $primary;
     margin: 15px 0;
