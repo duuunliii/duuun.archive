@@ -1,0 +1,118 @@
+const ArtWorksData = [
+  {
+    id: 0,
+    img: 'https://user-images.githubusercontent.com/77374852/224047726-9a3ae933-7724-4825-bc81-d8ba5a508fa4.png',
+    title: 'Room_A_Day',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 1,
+    img: 'https://user-images.githubusercontent.com/77374852/224047777-c2949c4b-88d9-41db-8b35-12deebf1261e.png',
+    title: 'Room_A_Night',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 2,
+    img: 'https://user-images.githubusercontent.com/77374852/224218722-759770d3-79ef-44d5-a596-45866f0090ac.png',
+    title: 'Boat',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 3,
+    img: 'https://user-images.githubusercontent.com/77374852/224218727-7ee47b7f-3e66-45c3-bea9-248f0bd168b0.png',
+    title: 'Water Glass',
+    detail: '',
+    detailImg: [
+      'https://user-images.githubusercontent.com/77374852/224246079-438e9c93-eb48-4438-b63d-61be62d9318f.png',
+    ],
+  },
+  {
+    id: 4,
+    img: 'https://user-images.githubusercontent.com/77374852/224239254-b4a8f61e-c16f-4b25-9f66-0267e3122e70.png',
+    title: 'Pudding',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 5,
+    img: 'https://user-images.githubusercontent.com/77374852/224242231-baa6b398-9bf1-450d-b2fb-b2978b578305.png',
+    title: 'Poster01',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 6,
+    img: 'https://user-images.githubusercontent.com/77374852/224219982-b39c19d9-47f3-42fe-85b6-222f5ec0e546.png',
+    title: '25 Cake',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 7,
+    img: 'https://user-images.githubusercontent.com/77374852/224231698-06f071f7-3b1f-4814-a7bd-c9e0f96bdb70.png',
+    title: 'Room_B_01',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 8,
+    img: 'https://user-images.githubusercontent.com/77374852/224231701-e1f51b66-f4b1-4a2c-bb17-512c34d80cc4.jpg',
+    title: 'Room_B_02',
+    detail: '',
+    detailImg: [
+      'https://user-images.githubusercontent.com/77374852/224231705-3f2baaf7-c1a0-417f-af96-fe9ad6f8b002.jpg',
+      'https://user-images.githubusercontent.com/77374852/224231711-380a252f-5065-4fd0-9025-aa1f53348b95.jpg',
+    ],
+  },
+  {
+    id: 9,
+    img: 'https://user-images.githubusercontent.com/77374852/224231714-3219e1e4-da6a-4e41-941a-5f7e9d07c58e.png',
+    title: 'Room_B_03',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 10,
+    img: 'https://user-images.githubusercontent.com/77374852/224232383-bcccda57-41aa-4750-a74c-2fb1c24d2ed0.png',
+    title: 'Room_B_04',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 11,
+    img: 'https://user-images.githubusercontent.com/77374852/224242459-610c5966-0b7e-4190-84be-dc80459483da.png',
+    title: 'duuun_logo_01',
+    detail: '',
+    detailImg: [
+      'https://user-images.githubusercontent.com/77374852/224242480-7c1722fc-d499-4915-9c6c-bc2aa55f0937.png',
+      'https://user-images.githubusercontent.com/77374852/224242484-ce33943f-2c61-477e-9578-b3afe03544e9.png',
+      'https://user-images.githubusercontent.com/77374852/224242489-f928fa50-7851-4298-a8d4-23e3076843d1.png',
+    ],
+  },
+  {
+    id: 12,
+    img: 'https://user-images.githubusercontent.com/77374852/224242876-894c9d90-26f6-4c72-bb8b-4370b8ff9c7f.png',
+    title: 'Shape_01',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 13,
+    img: 'https://user-images.githubusercontent.com/77374852/224245100-bff48625-a4a1-47f6-acce-18fca60bd1c4.png',
+    title: 'Gamja_logo_01',
+    detail: '',
+    detailImg: [],
+  },
+  {
+    id: 14,
+    img: 'https://user-images.githubusercontent.com/77374852/224244403-f8de6620-d318-40c4-9d56-361f5470977d.png',
+    title: 'Gamja_logo_02',
+    detail: '',
+    detailImg: [],
+  },
+]
+
+export default ArtWorksData

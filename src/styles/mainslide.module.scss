@@ -1,0 +1,22 @@
+@import './main.scss';
+
+$slide-num: 3;
+
+.mainSlide {
+  @include flexbox(start);
+  width: calc(100vw * #{$slide-num});
+  height: 85%;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+
+  .slide {
+    @include flexbox(center);
+    width: calc(100% / #{$slide-num});
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .slide::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,25 +1,20 @@
 @import './main.scss';
 
 .header {
-  margin: 0 30px;
-  padding: 20px 0;
+  @include flexbox;
+  width: 100vw;
+  height: 5%;
 
-  .profileimg {
-    @include flexbox();
-    margin-bottom: 20px;
-
-    img {
-      display: block;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
+  h1 {
+    color: $white;
+    font-family: $light;
+    font-size: 12px;
+    text-align: center;
   }
 
-  .profilename {
-    font-size: 25px;
-    color: $primary;
-    font-family: $dos;
-    text-align: center;
+  @include responsive(T) {
+    h1 {
+      font-size: 15px;
+    }
   }
 }

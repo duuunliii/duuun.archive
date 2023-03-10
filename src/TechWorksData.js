@@ -1,4 +1,4 @@
-const WorksData = [
+const TechWorksData = [
   {
     id: 0,
     img: 'https://user-images.githubusercontent.com/77374852/178111288-05c07e3b-f1b8-4450-9c2b-1361d4394d5e.png',
@@ -25,7 +25,7 @@ const WorksData = [
     img: 'https://user-images.githubusercontent.com/77374852/178111308-faacca1a-66e3-42af-b52c-874479d88b8c.png',
     title: 'CHUCKLE',
     summary:
-      '웃음을 강요하는 사회를 웃는 모습만 업로드할 수 있는 SNS에 빗대어 표현한 작품',
+      '웃음을 강요하는 사회를 웃는 모습만 업로드할 수 있는 SNS에 빗대어 표현',
     year: '2020',
     genre: '인터랙티브 인스톨레이션',
     skill: 'Unity, Arduino, Python AI',
@@ -67,12 +67,12 @@ const WorksData = [
     id: 3,
     img: 'https://user-images.githubusercontent.com/77374852/178111313-10c1df8b-bde8-4a19-ac7b-0b40ac26075f.png',
     title: '파동',
-    summary: '인간의 움직임에 영향을 받아 일렁이는 웹의 모습을 형상화한 작품',
+    summary: '인간의 영향을 받는 웹의 모습을 시각화',
     year: '2021',
     genre: '인터랙티브 웹',
     skill: 'JavaScript',
     detail: [
-      '정보화 시대가 도래하고 인터넷과 인간이 뗄레야 뗄 수 없는 사이가 된 현대 사회에서 컴퓨터 및 각종 전자기기, 웹 서버 등이 더이상 수동적이고 정적이기만 한 존재라고는 생각되지 않았다. 그리고 그런 오브젝트에 생동성을 부여해주는 건 우리 인간이다. 인간이 웹에 주는 영향을 시각화하기 위해 웹캠을 통해 인간의 위치 좌표값을 읽어낸 후 인간의 이동에 맞게 파도가 출렁이는 모습을 표현했다. 위치값을 읽어내는 데에 tensorflow js의 bodypix 모델을 사용했다.',
+      '정보화 시대가 도래하고 인터넷과 인간이 뗄레야 뗄 수 없는 사이가 된 현대 사회에서 컴퓨터 및 각종 전자기기, 웹 서버 등이 더이상 수동적이고 정적이기만 한 존재라고는 생각되지 않는다. 인간이 웹에 주는 영향을 시각화하기 위해 웹캠을 통해 인간의 위치 좌표값을 읽어낸 후 인간의 이동에 맞게 파동이 발생하는 모습을 표현했다. 위치값을 읽어내는 데에 tensorflow js의 bodypix 모델을 사용했다.',
       'HTML5의 Canvas API를 tensorflow js의 값으로 제어한다.',
     ],
     detailImg: [
@@ -103,4 +103,4 @@ const WorksData = [
   },
 ]
 
-export default WorksData
+export default TechWorksData

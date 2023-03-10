@@ -1,7 +1,38 @@
 @import './main.scss';
 
 .navbar {
-  @include flexbox;
-  font-family: $dos;
-  color: $primary;
+  @include flexbox(around);
+  width: 86%;
+  height: 8%;
+  margin: 0 7%;
+  border-top: 1px solid $white;
+
+  button {
+    color: $white;
+    font-size: 12px;
+    transition: font-size 200ms ease-in-out;
+
+    &.isActive {
+      font-family: $medium;
+      font-size: 14px;
+    }
+  }
+
+  button:hover {
+    font-size: 14px;
+  }
+
+  @include responsive(T) {
+    button {
+      font-size: 15px;
+
+      &.isActive {
+        font-size: 17px;
+      }
+    }
+
+    button:hover {
+      font-size: 17px;
+    }
+  }
 }

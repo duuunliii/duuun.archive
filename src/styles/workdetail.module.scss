@@ -1,80 +1,99 @@
 @import './main.scss';
 
-.workdetail {
-  width: 90%;
-  margin: 20px 5%;
-  padding: 30px;
-  // border-radius: 20px;
-  background: #ebebeb;
-  // box-shadow: 7px 7px 5px #cccccc, -7px -7px 5px #ffffff;
+.modal {
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 80vh;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: $primary;
+  text-align: center;
+  transform: translate3d(200%, 100vh, 0) scale(1, 0.1);
+  transition: transform 500ms ease-in-out;
 
-  .backBtn {
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-bottom: 20px;
-    background-image: url('https://user-images.githubusercontent.com/77374852/178285639-fde5da7d-3fe1-4b65-83f8-b054c72327a1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  &.isActive {
+    transform: translate3d(200%, 0, 0) scale(1, 1);
   }
 
-  .title {
-    // font-family: $dos;
-    font-size: 26px;
-    color: #3b3b3b;
-    text-align: center;
-  }
-
-  .yearAndGenre {
-    display: block;
-    color: $primary;
-    font-size: 15px;
-    text-align: center;
-    // font-family: $dos;
-    margin-bottom: 10px;
-
-    .year,
-    .genre {
-      // font-family: $dos;
-      display: inline;
-    }
-  }
-
-  .skill {
-    color: #3b3b3b;
-    font-size: 15px;
-    text-align: center;
-    margin-bottom: 30px;
-    // font-family: $light;
-  }
-
-  .detail {
-    // font-family: $medium;
-    font-size: 15px;
-    color: $primary;
-    margin: 15px 0;
-  }
-
-  .detailImg,
-  .detailVideo {
-    display: block;
+  .workdetail {
     width: 90%;
-    max-width: 500px;
-    margin: 3px auto;
-  }
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    background: #ebebeb;
 
-  @include responsive(T) {
     .title {
-      font-size: 30px;
+      font-size: 20px;
+      color: $primary;
+      text-align: center;
+    }
+
+    .yearAndGenre {
+      display: block;
+      color: $primary;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 10px;
+
+      .year,
+      .genre {
+        display: inline;
+      }
+    }
+
+    .skill {
+      color: #3b3b3b;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 30px;
+      // font-family: $light;
     }
 
     .detail {
-      font-size: 17px;
+      // font-family: $medium;
+      font-size: 12px;
+      color: $primary;
+      margin: 15px 0;
     }
 
-    .detailImg {
-      width: 70%;
+    .detailImg,
+    .detailVideo {
+      display: block;
+      width: 90%;
+      max-width: 500px;
       margin: 3px auto;
     }
+
+    @include responsive(T) {
+      .title {
+        font-size: 25px;
+      }
+
+      .detail {
+        font-size: 15px;
+      }
+
+      .detailImg {
+        width: 70%;
+        margin: 3px auto;
+      }
+    }
+  }
+
+  .artWorkImg {
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 50px auto;
+  }
+
+  .modal ::-webkit-scrollbar {
+    display: none;
   }
 }

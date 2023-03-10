@@ -1,15 +1,36 @@
-import Header from '../components/Header.js'
-import NavBar from '../components/NavBar.js'
-import Profile from '../components/Profile.js'
-import WorksList from '../components/WorksList.js'
+import Header from '../components/Header'
+import MainSlide from '../components/MainSlide'
+import { useState } from 'react'
+import styles from '../styles/navbar.module.scss'
 
 function Home() {
   window.scrollTo(0, 0)
+  const [clickedNum, setClickedNum] = useState(0)
+
   return (
-    <div>
+    <div style={{ width: '100%', height: '90vh', overflow: 'hidden' }}>
       <Header />
-      {/* <Profile /> */}
-      <WorksList />
+      <MainSlide clickedNum={clickedNum} />
+      <div className={styles.navbar}>
+        <button
+          onClick={() => setClickedNum(0)}
+          className={clickedNum == 0 ? `${styles.isActive}` : ''}
+        >
+          HOME
+        </button>
+        <button
+          onClick={() => setClickedNum(1)}
+          className={clickedNum == 1 ? `${styles.isActive}` : ''}
+        >
+          PROFILE
+        </button>
+        <button
+          onClick={() => setClickedNum(2)}
+          className={clickedNum == 2 ? `${styles.isActive}` : ''}
+        >
+          WORKS
+        </button>
+      </div>
     </div>
   )
 }
