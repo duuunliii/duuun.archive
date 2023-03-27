@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/duuun.archive/static/css/main.1bc6154f.css",
-    "main.js": "/duuun.archive/static/js/main.68fabf06.js",
+    "main.css": "/duuun.archive/static/css/main.ff76b198.css",
+    "main.js": "/duuun.archive/static/js/main.7d1d30d5.js",
     "static/js/787.b9ef6210.chunk.js": "/duuun.archive/static/js/787.b9ef6210.chunk.js",
+    "static/media/Heart.gltf": "/duuun.archive/static/media/Heart.5f2a57cc5bb556b10046.gltf",
     "static/media/skills.png": "/duuun.archive/static/media/skills.6429efe324bd9e88c20d.png",
     "index.html": "/duuun.archive/index.html",
-    "main.1bc6154f.css.map": "/duuun.archive/static/css/main.1bc6154f.css.map",
-    "main.68fabf06.js.map": "/duuun.archive/static/js/main.68fabf06.js.map",
+    "main.ff76b198.css.map": "/duuun.archive/static/css/main.ff76b198.css.map",
+    "main.7d1d30d5.js.map": "/duuun.archive/static/js/main.7d1d30d5.js.map",
     "787.b9ef6210.chunk.js.map": "/duuun.archive/static/js/787.b9ef6210.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bc6154f.css",
-    "static/js/main.68fabf06.js"
+    "static/css/main.ff76b198.css",
+    "static/js/main.7d1d30d5.js"
   ]
 }
